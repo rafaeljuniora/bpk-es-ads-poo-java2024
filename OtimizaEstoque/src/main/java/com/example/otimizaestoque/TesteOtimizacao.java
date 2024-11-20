@@ -16,8 +16,7 @@ public class TesteOtimizacao extends Application {
     private TableView<Produto> table = new TableView<>();
     private ObservableList<Produto> produtosData = FXCollections.observableArrayList();
 
-    private Estoque estoque = new Estoque(50); // Capacidade máxima 50
-
+    private Estoque estoque = new Estoque(50);
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Sistema de Otimização de Estoque");

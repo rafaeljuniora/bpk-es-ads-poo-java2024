@@ -33,7 +33,6 @@ public class Estoque {
     }
     public void otimizarEstoque(List<Produto> todosProdutos) {
         todosProdutos.sort((p1, p2) -> Double.compare(p2.getValorPorPeso(), p1.getValorPorPeso()));
-
         for (Produto produto : todosProdutos) {
             if (produto.calcTotal() <= capRest()) {
                 addEstoque(produto);

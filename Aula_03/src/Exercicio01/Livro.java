@@ -15,6 +15,13 @@ public class Livro {
         Autor = autor;
         NumerodePagina = numerodePagina;
     }
+    void abrir(){
+        System.out.println("Livro " + Nome + " abrido");
+    }
+
+    void lerPagina(){
+        System.out.println("Lendo uma pagina do Livro "+Nome);
+    }
 
     @Override
     public String toString() {

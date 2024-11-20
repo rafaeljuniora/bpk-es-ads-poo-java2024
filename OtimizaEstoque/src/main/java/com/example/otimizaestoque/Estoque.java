@@ -32,10 +32,8 @@ public class Estoque {
         return capMax-capUtil;
     }
     public void otimizarEstoque(List<Produto> todosProdutos) {
-        // Ordena os produtos pela melhor razão valor/peso
         todosProdutos.sort((p1, p2) -> Double.compare(p2.getValorPorPeso(), p1.getValorPorPeso()));
 
-        // Tenta adicionar os produtos ao estoque respeitando a capacidade máxima
         for (Produto produto : todosProdutos) {
             if (produto.calcTotal() <= capRest()) {
                 addEstoque(produto);

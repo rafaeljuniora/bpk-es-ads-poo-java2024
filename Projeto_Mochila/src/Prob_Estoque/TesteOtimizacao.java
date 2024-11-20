@@ -36,7 +36,7 @@ public class TesteOtimizacao {
         todosProdutos.add(p9);
         todosProdutos.add(p10);
 
-        Estoque estoque = new Estoque(50); // Capacidade de 50
+        Estoque estoque = new Estoque(50);
         estoque.otimizarEstoque(todosProdutos);
 
         System.out.println("Estoque Otimizado:");
